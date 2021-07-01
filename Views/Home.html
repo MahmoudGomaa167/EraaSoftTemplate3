@@ -1,16 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>For Education</title>
+    <link rel="stylesheet" href="../Content/CSS/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../Content/CSS/vendor/fontawesome.min.css">
     <link rel="stylesheet" href="../Content/CSS/main-ltr.css">
 </head>
+
 <body>
-    <div>
-        <p>paragracph</p>
-    </div>
-    
+    <!--================================ Start Main Info Nav ====================================-->
+    <nav class="main-social">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="main-social__info">
+                        <span class="main-social__info__location__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span class="main-social__info__location__address">1600 Amphitheatre Parkway, CA 94043</span>
+                        <span class="main-social__info__mail__icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="main-social__info__mail__address">vctung@outlook.com</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="main-social__icons text-end">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--================================ End Main Info Nav ====================================-->
+
+    <!--======================================== Start Main Header ====================================-->
+    <header class="main-header">
+        <!--========================== Main Header Nav =================================-->
+        <nav class="navbar navbar-expand-lg main-header-nav">
+            <div class="container">
+
+                <a class="navbar-brand text-uppercase main-header-nav__logo" href="#">
+                    <img src="">
+                    <span>for education</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto main-header-nav__list">
+
+                        <li class="nav-item main-header-nav__list__item">
+                            <a class="nav-link main-header-nav__list__item__link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item main-header-nav__list__item">
+                            <a class="nav-link main-header-nav__list__item__link" href="#">About</a>
+                        </li>
+                        <li class="nav-item main-header-nav__list__item">
+                            <a class="nav-link main-header-nav__list__item__link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item main-header-nav__list__item">
+                            <a class="nav-link main-header-nav__list__item__link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn main-header-nav__sign" type="submit">Sign up</button>
+                        <button class="btn main-header-nav__search" type="submit"><i class="fas fa-search"></i></button>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--========================== Main Header Nav =================================-->
+
+        <!--========================== Main Header Intro =================================-->
+        <div class="main-header__info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="main-header__info__brief">
+                            <h3 class="text-capitalize main-header__info__brief__small-header">Become Master</h3>
+                            <h1 class="text-capitalize main-header__info__brief__big-header">Learn New Skills Online
+                                Find Best Courses</h1>
+                            <form class="d-flex">
+                                <button class="btn text-capitalize main-header__info__brief__get">Get A Quote</button>
+                                <button class="btn text-capitalize main-header__info__brief__read">Read more</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="main-header__info__image">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========================== Main Header Intro =================================-->
+
+        <!--========================== Main Header Event =================================-->
+        <div class="container">
+            <div class="main-header__event">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <div class="main-header__event__image">
+                            <img src="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="main-header__event__brief">
+                            <h3>Upcoming Our <span>Basic in Python</span> Course!</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="main-header__event__time text-center">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="main-header__event__time__days">
+                                        <p id="day">11</p>
+                                        <span>Days</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-1">
+                                    <span class="main-header__event__time__column">:</span>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="main-header__event__time__hours">
+                                        <p id="hour">02</p>
+                                        <span>Hours</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-1">
+                                    <span class="main-header__event__time__column">:</span>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="main-header__event__time__minutes">
+                                        <p id="minute">45</p>
+                                        <span>Minutes</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-1">
+                                    <span class="main-header__event__time__column">:</span>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="main-header__event__time__seconds">
+                                        <p id="second">21</p>
+                                        <span>Seconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========================== Main Header Event =================================-->
+    </header>
+    <!--======================================== End Main Header ====================================-->
+
+    <!--======================================== Start Featured Courses ====================================-->
+    <section class="main-courses">
+        <div class="container">
+            <h2 class="main-courses__header">Top Featured Courses</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">User Research for User Experience Design</h4>
+                        <p class="main-courses__info__caption">The Museum of Modern Art</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">Buddhism and Modern Psychology</h4>
+                        <p class="main-courses__info__caption">The Museum of Modern Art</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">Introduction to Philosophy</h4>
+                        <p class="main-courses__info__caption">Duke University</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">Advance on Seeing Through Photographs</h4>
+                        <p class="main-courses__info__caption">Duke University</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">Think Again I: How to Understand Arguments</h4>
+                        <p class="main-courses__info__caption">The Museum of Modern Art</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">User Research for User Experience Design</h4>
+                        <p class="main-courses__info__caption">The Museum of Modern Art</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">User Research for User Experience Design</h4>
+                        <p class="main-courses__info__caption">The Museum of Modern Art</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">Introduction to Logic and Critical Thinking</h4>
+                        <p class="main-courses__info__caption">Duke University</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="main-courses__info d-flex flex-column justify-content-between position-relative">
+                        <img src="https://via.placeholder.com/370x200">
+                        <h4 class="main-courses__info__header">Modern and Contemporary Art and Design</h4>
+                        <p class="main-courses__info__caption">The Museum of Modern Art</p>
+                        <div class="main-courses__info__image">
+                            <img src="https://via.placeholder.com/80x80">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================================== End Featured Courses ====================================-->
+
+    <!--======================================== Start Successful Student ====================================-->
+    <section class="main-student">
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-md-6">
+                    <div class="main-student__image position-relative">
+                        <img src="https://via.placeholder.com/541x404" class="main-student__big-image">
+                        <div class="main-student__small-image">
+                            <img src="https://via.placeholder.com/120x120">
+                        </div>
+                        <div class="main-student__sub-info text-center">
+                            <h5 class="main-student__sub-info__header">Kimmie Vo</h5>
+                            <p class="main-student__sub-info__paragraph">Junior Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="main-student__info">
+                        <h3 class="main-student__info__header">Successful Student <span>Feedback</span></h3>
+                        <p class="main-student__info__paragraph">Take courses from the world’s best instructors and
+                            universities. Courses include recorded auto-graded and peer-reviewed assignments, video
+                            lectures, and community discussion forums. When you complete a course, you’ll be eligible to
+                            receive a shareable electronic Course Certificate for a small fee.</p>
+                        <h6 class="main-student__info__small-header">The courses that Kimmie has taken</h6>
+                        <div class="main-student__info__subtitle position-relative">
+                            <h5 class="main-student__info__subtitle__header">Modern and Contemporary Art and Design</h5>
+                            <p class="main-student__info__subtitle__paragraph">The Museum of Modern Art</p>
+                            <img src="https://via.placeholder.com/80x80" class="main-student__info__subtitle__image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================================== End Successful Student ====================================-->
+
+    <!--======================================== Start Counter Section ====================================-->
+    <section class="main-counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="main-counter__item">
+                        <img src="https://via.placeholder.com/200x200">
+                        <p id="courses" class="main-counter__item__number">768</p>
+                        <h6 class="main-counter__item__title text-uppercase">COURSES PUBLISHED</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-counter__item">
+                        <img src="https://via.placeholder.com/200x200">
+                        <p id="expert" class="main-counter__item__number">120</p>
+                        <h6 class="main-counter__item__title text-uppercase">EXPERT INSTRUCTORS</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-counter__item">
+                        <img src="https://via.placeholder.com/200x200">
+                        <p id="happy" class="main-counter__item__number">8,300</p>
+                        <h6 class="main-counter__item__title text-uppercase">HAPPY LEARNERS</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-counter__item">
+                        <img src="https://via.placeholder.com/200x200">
+                        <p id="awards" class="main-counter__item__number">32</p>
+                        <h6 class="main-counter__item__title text-uppercase">AWARDS ACHIEVED</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================================== End Counter Section ====================================-->
+
+    <!--======================================== Start Subscribe Section ====================================-->
+    <section class="main-subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="">
+                </div>
+
+                <div class="col-md-6">
+                    <h6 class="main-subscribe__small__header">Subscrible now</h6>
+                    <h2 class="main-subscribe__big__header">Get every single update you will get</h2>
+                    <div class="main-subscribe__input">
+                        <i class="fas fa-envelope"></i>
+                        <input id="email" type="text" name="user_email" placeholder="Enter email address">
+                        <button id="subscribe" type="submit" class="btn">Subscribe Now</button>
+                    </div>
+                    <p id="alert-email" class="alert alert-danger">Please Enter a valid Email!!!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================================== Start Subscribe Section ====================================-->
+
+    <!--======================================== Start Footer Section ====================================-->
+    <section class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-footer__info">
+                        <h2 class="main-footer__info__logo text-uppercase">for education</h2>
+                        <div class="d-flex flex-column justify-content-start">
+                            <div class="main-footer__info__location d-flex">
+                                <i class="fas fa-map-marker-alt fa-fw"></i>
+                                <p class="d-inline-block">1500 Treat Ave, Suite 200 San Francisco, CA 94110</p>
+                            </div>
+
+                            <div class="main-footer__info__mail">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <p class="d-inline-block">vctung@outlook.com</p>
+                            </div>
+
+                            <div class="main-footer__info__phone">
+                                <i class="fas fa-phone-alt fa-fw"></i>
+                                <p class="d-inline-block">1-800-800-2299 (Support)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-4">
+                    <div class="main-footer__community">
+                        <h5 class="main-footer__community__header text-capitalize">Community</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-capitalize">learners</a></li>
+                            <li><a href="#" class="text-capitalize">Partners</a></li>
+                            <li><a href="#" class="text-capitalize">Developers</a></li>
+                            <li><a href="#" class="text-capitalize">Beta Testers</a></li>
+                            <li><a href="#" class="text-capitalize">Translators</a></li>
+                            <li><a href="#" class="text-capitalize">Blog</a></li>
+                            <li><a href="#" class="text-capitalize">Tech Blog</a></li>
+                            <li><a href="#" class="text-capitalize">Teaching Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-4">
+                    <div class="main-footer__informations">
+                        <h5 class="main-footer__informations__header text-capitalize">informations</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-capitalize">About</a></li>
+                            <li><a href="#" class="text-capitalize">Pricing</a></li>
+                            <li><a href="#" class="text-capitalize">Blog</a></li>
+                            <li><a href="#" class="text-capitalize">Careers</a></li>
+                            <li><a href="#" class="text-capitalize">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2 col-4">
+                    <div class="main-footer__more">
+                        <h5 class="main-footer__more__header text-capitalize">More</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-capitalize">Press</a></li>
+                            <li><a href="#" class="text-capitalize">Investors</a></li>
+                            <li><a href="#" class="text-capitalize">Terms</a></li>
+                            <li><a href="#" class="text-capitalize">Privacy</a></li>
+                            <li><a href="#" class="text-capitalize">Help</a></li>
+                            <li><a href="#" class="text-capitalize">Accessibility</a></li>
+                            <li><a href="#" class="text-capitalize">Contact</a></li>
+                            <li><a href="#" class="text-capitalize">Articles</a></li>
+                            <li><a href="#" class="text-capitalize">Directory</a></li>
+                            <li><a href="#" class="text-capitalize">Affiliates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main-footer__social d-flex align-items-center">
+                <span class="main-footer__social__info">Copyright &copy; 2021 Tung Chi Vo</span>
+                <div class="main-footer__social__icons ms-auto">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--======================================== End Footer Section ====================================-->
+
+    <script src="../Content/JS/vendor/jquery-3.6.0.min.js"></script>
+    <script src="../Content/JS/vendor/all.min.js"></script>
+    <script src="../Content/JS/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../Content/JS/main.js"></script>
 </body>
+
 </html>
