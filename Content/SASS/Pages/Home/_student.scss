@@ -1,0 +1,422 @@
+.home-page{
+    .home-page__student{
+        margin-top: 114px;
+        padding-bottom: 112px;
+        .student__image{
+            left: 29px;
+            .image__small-img{
+                position: absolute;
+                top: -34px;
+                left: -29px;
+                border-radius: 6px;
+            }
+            .image__caption{
+                position: absolute;
+                text-align: center;
+                background-color: #fff;
+                border-radius: 6px;
+                box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 0.03);
+                min-width: 400px;
+                left: 71px;
+                bottom: -38.5px;
+                padding: 16px 48px 14px 16px;
+                h4{
+                    color: $mainColor;
+                    font-size: calc(20px + (20 - 18) * ((100vw - 1920px)/ (1920 - 1366)));
+                    font-family: $interFont;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                    font-family: $interFont;
+                    line-height: 1.71;
+                    color: $subHeaderColor;
+                }
+            }
+        }
+        .student__info{
+            .info__big-header{
+                font-size: calc(48px + (48 - 35) * ((100vw - 1920px)/ (1920 - 1366)));
+                font-family: $georgiaFont;
+                font-weight: bold;
+                line-height: 1.25;
+                color: $mainColor;
+                margin-top: -6px;
+                margin-bottom: 16px;
+                span{
+                    color: $yellowColor;
+                }
+            }
+            .info__paragraph{
+                color: $mainColor;
+                font-size: calc(17px + (17 - 16) * ((100vw - 1920px)/ (1920 - 1366)));
+                font-family: $interFont;
+                line-height: 1.5;
+                margin-bottom: 45px;
+            }
+            .info__small-header{
+                color: $mainColor;
+                font-family: $interFont;
+                font-size: calc(16px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                font-weight: bold;
+                line-height: 1.5;
+                margin-bottom: 13px;
+            }
+            .info__caption{
+                background-color: $grayBackgroundColor;
+                max-width: 511px;
+                left: 63px;
+                padding: 0 134px 0 41px;
+                border-radius: 6px;
+                .caption__header{
+                    font-size: calc(16px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                    font-family: $interFont;
+                    font-weight: bold;
+                    color: $mainColor;
+                    line-height: 1.5;
+                    padding-top: 24px;
+                    margin-bottom: 2px;
+                }
+                .caption__footer{
+                    color: $subHeaderColor;
+                    font-family: $subHeaderColor;
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                    line-height: 1.71;
+                    padding-bottom: 24px;
+                }
+                .caption__image{
+                    position: absolute;
+                    border-radius: 6px;
+                    // background-image: url('../../../images/UX_design_principles_jpg_-EtzLc2m.jpg');
+                    // background-repeat: no-repeat;
+                    // background-size: cover;
+                    // background-position: center;
+                    background-color: teal;
+                    min-width: 80px;
+                    min-height: 80px;
+                    left: -63px;
+                    top: 8px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                left: 7px;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    left: -7px;
+                }
+                .image__caption{
+                    min-width: 328px;
+                    h4{
+                        font-size: calc(18px + (18 - 16) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(35px + (35 - 30) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(16px + (16 - 14) * ((100vw - 1366px)/ (1366 - 320)));   
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 1366px)/ (1366 - 320)));
+                    margin-bottom: 35px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 100%;
+                    left: 0;
+                    
+                    .caption__header{
+                        font-size: calc(16px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                        font-family: $interFont;
+                        font-weight: bold;
+                        color: $mainColor;
+                        line-height: 1.5;
+                        padding-top: 24px;
+                        margin-bottom: 2px;
+                    }
+                    .caption__footer{
+                        color: $subHeaderColor;
+                        font-family: $subHeaderColor;
+                        font-size: calc(14px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                        line-height: 1.71;
+                        padding-bottom: 24px;
+                    }
+                    .caption__image{
+                       display: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 992px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                left: 0;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    display: none;
+                }
+                .image__caption{
+                    min-width: 328px;
+                    h4{
+                        font-size: calc(18px + (18 - 16) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(35px + (35 - 30) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(16px + (16 - 14) * ((100vw - 1366px)/ (1366 - 320)));   
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 1366px)/ (1366 - 320)));
+                    margin-bottom: 35px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 100%;
+                    left: 0;
+                    
+                    .caption__header{
+                        font-size: calc(16px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                        font-family: $interFont;
+                        font-weight: bold;
+                        color: $mainColor;
+                        line-height: 1.5;
+                        padding-top: 24px;
+                        margin-bottom: 2px;
+                    }
+                    .caption__footer{
+                        color: $subHeaderColor;
+                        font-family: $subHeaderColor;
+                        font-size: calc(14px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                        line-height: 1.71;
+                        padding-bottom: 24px;
+                    }
+                    .caption__image{
+                       display: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                left: 0;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    display: none;
+                }
+                .image__caption{
+                    min-width: 241px;
+                    left: 51px;
+                    h4{
+                        font-size: calc(18px + (18 - 16) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(30px + (30 - 25) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));  
+                    margin-bottom: 15px; 
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 1366px)/ (1366 - 320)));
+                    margin-bottom: 5px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 100%;
+                    left: 0;
+                    padding-right: 90px;
+                    
+                    .caption__header{
+                        font-size: calc(14px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                        
+                    }
+                    .caption__footer{
+                        
+                        font-size: calc(14px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                        
+                    }
+                    .caption__image{
+                       display: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                left: 0;
+                margin-bottom: 60px;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    display: none;
+                }
+                .image__caption{
+                    min-width: 328px;
+                    left: 71px;
+                    h4{
+                        font-size: calc(20px + (20 - 18) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(16px + (16 - 14) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(30px + (30 - 25) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(16px + (16 - 14) * ((100vw - 1366px)/ (1366 - 320)));  
+                    margin-bottom: 15px; 
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 1366px)/ (1366 - 320)));
+                    margin-bottom: 15px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 100%;
+                    left: 0;
+                    padding-right: 90px;
+                    
+                    .caption__header{
+                        font-size: calc(18px + (18 - 16) * ((100vw - 1366px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__footer{
+                        
+                        font-size: calc(16px + (16 - 14) * ((100vw - 1366px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__image{
+                       display: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                left: 0;
+                margin-bottom: 60px;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    display: none;
+                }
+                .image__caption{
+                    min-width: 200px;
+                    left: 50px;
+                    padding-right: 16px;
+                    h4{
+                        font-size: calc(18px + (18 - 16) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(25px + (25 - 20) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));  
+                    margin-bottom: 15px; 
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                    margin-bottom: 15px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 100%;
+                    left: 0;
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    .caption__header{
+                        font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__footer{
+                        
+                        font-size: calc(12px + (12 - 10) * ((100vw - 1366px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__image{
+                       display: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
