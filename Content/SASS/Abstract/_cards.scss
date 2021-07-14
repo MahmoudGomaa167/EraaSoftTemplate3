@@ -1,0 +1,175 @@
+.custom-card{
+        border: 1px solid #bdbdbd;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        height: 92%;
+        position: relative;
+        .card__image-border{
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                width: 100%;
+                padding-top: (9 / 16) * 100%;
+            }
+            .inner-image{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .margin{
+            margin-bottom: 21px;
+        }
+        .item__title{
+            margin-top: 23px;
+            padding: 0 16px 0 16px;
+            h4{
+                font-family: $interFont;
+                font-weight: bold;
+                font-size: calc(18px + (20 - 18) * ((100vw - 1366px)/ (1920 - 1366)));
+                line-height: 1.2;
+                color: $mainColor;
+                margin-bottom: 0;
+                
+            }
+        }
+        .item__footer{
+            padding: 0 16px 15px 16px;
+            margin-bottom: 0;
+            p{
+                font-family: $interFont;
+                font-size: calc(14px + (14 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                color: $subHeaderColor;
+                line-height: 1.71;
+                margin-bottom: 0;
+            }
+        }
+        .card__small-image{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: $grayBackgroundColor;
+            padding: 8px;
+            bottom: 102px;
+            left: 16px;
+        }
+    }
+
+@media (max-width: 1025px){
+    .custom-card{
+        .margin{
+            margin-bottom: 17px;
+        }
+        .item__title{
+            h4{
+                font-size: calc(16px + (16 - 16) * ((100vw - 320px)/ (1366 - 320)));  
+            }
+        }
+        .item__footer{
+            p{
+                font-size: calc(14px + (14 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+            }
+        }
+        .card__small-image{
+            bottom: 98px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .custom-card{
+        .margin{
+            margin-bottom: 13px;
+        }
+        .item__title{
+            padding: 0 12px 0 12px;
+            h4{
+                font-size: calc(11px + (12 - 11) * ((100vw - 320px)/ (1366 - 320)));
+            }
+        }
+        .item__footer{
+            padding: 0 12px 0 12px;
+            p{
+                font-size: calc(12px + (12 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                
+            }
+        }
+        .card__small-image{
+            bottom: 72px;
+            width: 60px;
+            height: 60px;
+            padding: 4px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 481px){
+    .custom-card{
+        .margin{
+            margin-bottom: 26px;
+        }
+        .item__title{
+            padding: 0 16px 0 16px;
+            h4{
+                font-size: calc(22px + (22 - 22) * ((100vw - 320px)/ (1366 - 320)));
+            }
+        }
+        .item__footer{
+            padding: 0 16px 0 16px;
+            p{
+                font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                
+            }
+        }
+        .card__small-image{
+            bottom: 91px;
+            width: 80px;
+            height: 80px;
+            padding: 8px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
+    .custom-card{
+        .margin{
+            margin-bottom: 16px;
+        }
+        .item__title{
+            padding: 0 16px 0 16px;
+            h4{
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+            }
+        }
+        .item__footer{
+            padding: 0 16px 0 16px;
+            margin-bottom: 0;
+            p{
+                font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                
+            }
+        }
+        .card__small-image{
+            bottom: 75px;
+            width: 80px;
+            height: 80px;
+            padding: 8px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

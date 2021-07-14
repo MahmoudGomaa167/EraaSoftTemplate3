@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Education</title>
+    <link rel="stylesheet" href="Content/CSS/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/CSS/vendor/iconmoon.css">
+    <link rel="stylesheet" href="Content/CSS/vendor/fontawesome.min.css">
+    <link rel="stylesheet" href="Content/CSS/main-ltr.css">
+</head>
+
+<body>
+    <div class="white-overlay"></div>
+    <div class="home-page">
+        <div class="generic-nav">
+            <!--==================Main Info Navbar=========================-->
+            <div class="generic-nav__info-nav">
+                <div class="container">
+
+                    <div class="info-nav__main-info">
+                        <div class="main-info__location">
+                            <span class="icon-location"></span>
+                            <span>1600 Amphitheatre Parkway, CA 94043</span>
+                        </div>
+                        <div class="main-info__mail">
+                            <span class="icon-message"></span>
+                            <span>vctung@outlook.com</span>
+                        </div>
+
+
+                        <div class="main-info__social-icons">
+                            <a href="#">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon-pinterest"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon-tiwitter"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon-instegram"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--==================Main Info Navbar=========================-->
+
+            <!--==================Main Navbar=========================-->
+            <nav class="navbar navbar-expand-lg generic-nav__main-nav">
+                <div class="container">
+                    <a class="navbar-brand text-uppercase" href="#">
+                        <img src="Content/images/Group 8.jpg">
+                        <span>for education</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span id="menuIcon" class="icon-menu"></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="Home.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="Listing.html">courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#">contact</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex">
+                            <button class="yellow-button">sign up</button>
+                            <button class="search-button">
+                                <span class="icon-search"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!--==================Main Navbar=========================-->
+        </div>
+        <!--==================Header Section=========================-->
+     <header class="home-page__header position-relative">
+       
+        <!--==================Main Navbar=========================-->
+
+        <!--==================Header Caption=========================-->
+        <section class="header__caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="caption__brief">
+                            <h2 class="brief__small-header text-capitalize">Become Master</h2>
+                            <h1 class="brief__big-header text-capitalize">Learn New Skills Online Find Best Courses
+                            </h1>
+                            <button class="yellow-button brief--yellow-button">Get A Quote</button>
+                            <button class="search-button brief--search-button">Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="caption__image">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================Header Caption=========================-->
+
+        <!--==================event section=========================-->
+        <section class="header__event">
+            <div class="container">
+                <div class="event__info">
+                    
+                        
+                            <div class="custom-flex-media">
+                                <div class="info__image">
+                                    <img src="Content/images/Сharacter.jpg">
+                                    <img src="Content/images/Group.jpg">
+                                </div>
+                                
+                                
+                                
+                                <div class="info__header">
+                                    <h2>Upcoming Our <span>Basic in Python</span> Course!</h2>
+                                </div>
+                            </div>
+                        
+
+                        
+                            <div class="info__time">
+                                <div class="time__days custom-flex">
+                                    <h2 id="days"></h2>
+                                    <p>Days</p>
+                                </div>
+                                <div class="time__hours custom-flex">
+                                    <h2 id="hours"></h2>
+                                    <p>Hours</span>
+                                </div>
+                                <div class="time__minutes custom-flex">
+                                    <h2 id="minutes"></h2>
+                                    <p>Minutes</p>
+                                </div>
+                                <div class="time__seconds custom-flex">
+                                    <h2 id="seconds"></h2>
+                                    <p>Seconds</span>
+                                </div>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        </section>
+        <!--==================event section=========================-->
+    </header>
+    <!--==================Header Section=========================-->
+        <!--==================Courses Section=========================-->
+        <section class="home-page__courses">
+            <div class="container">
+                <div class="courses__header text-center">
+                    <h2 class="text-uppercase">Top Featured Courses</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card1.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>User Research for User Experience Design</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>The Museum of Modern Art</p>
+                            </div>
+                
+                            <div class="card__small-image">
+                                <img src="Content/images/small1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card2.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title margin">
+                                <h4>Buddhism and Modern Psychology</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>The Museum of Modern Art</p>
+                            </div>
+                
+                            <div class="card__small-image">
+                                <img src="Content/images/small2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card3.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title margin">
+                                <h4>Introduction to Philosophy</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>Duke University</p>
+                            </div>
+                
+                            <div class="card__small-image">
+                                <img src="Content/images/small3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card4.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>Advance on Seeing Through Photographs</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>Duke University</p>
+                            </div>
+    
+                            <div class="card__small-image">
+                                <img src="Content/images/small1.jpg">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card5.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>Think Again I: How to Understand Arguments</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>The Museum of Modern Art</p>
+                            </div>
+    
+                            <div class="card__small-image">
+                                <img src="Content/images/small3.jpg">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card6.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>User Research for User Experience Design</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>The Museum of Modern Art</p>
+                            </div>
+    
+                            <div class="card__small-image">
+                                <img src="Content/images/small2.jpg">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card8.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>User Research for User Experience Design</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>The Museum of Modern Art</p>
+                            </div>
+    
+                            <div class="card__small-image">
+                                <img src="Content/images/small1.jpg">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card7.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>Introduction to Logic and Critical Thinking</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>Duke University</p>
+                            </div>
+    
+                            <div class="card__small-image">
+                                <img src="Content/images/small1.jpg">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="custom-card">
+                            <div class="card__image-border">
+                                <div class="inner-image">
+                                    <img src="Content/images/card9.jpg">
+                                </div>
+                            </div>
+                            <div class="item__title">
+                                <h4>Modern and Contemporary Art and Design</h4>
+                            </div>
+                            <div class="item__footer">
+                                <p>The Museum of Modern Art</p>
+                            </div>
+    
+                            <div class="card__small-image">
+                                <img src="Content/images/small3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================Courses Section=========================-->
+
+        <!--==================Successful Student Section=========================-->
+        <section class="home-page__student">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="student__image position-relative">
+                            <img src="Content/images/img.jpg">
+                            <div class="image__small-img">
+                                <img src="Content/images/Instagram post.jpg">
+                            </div>
+                            <div class="image__caption">
+                                <h4>Kimmie Vo</h4>
+                                <p>Junior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="student__info">
+                            <h2 class="info__big-header">Successful Student <span>Feedback</span></h2>
+                            <p class="info__paragraph">Take courses from the world’s best instructors and universities.
+                                Courses include recorded auto-graded and peer-reviewed assignments, video lectures, and
+                                community discussion forums. When you complete a course, you’ll be eligible to receive a
+                                shareable electronic Course Certificate for a small fee.</p>
+                            <h5 class="info__small-header">The courses that Kimmie has taken</h5>
+                            <div class="info__caption position-relative">
+                                <h6 class="caption__header">Modern and Contemporary Art and Design</h6>
+                                <p class="caption__footer">The Museum of Modern Art</p>
+                                <div class="caption__image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================Successful Student Section=========================-->
+
+        <!--==================Counter Section=========================-->
+        <section class="home-page__counter">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="counter__item text-center">
+                            <div class="item__image d-flex align-items-center justify-content-center">
+                                <img src="Content/images/E-commerce.jpg">
+                            </div>
+                            <p id="counters" data-number="768">0</p>
+                            <h5 class="text-uppercase">COURSES PUBLISHED</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="counter__item text-center">
+                            <div class="item__image d-flex align-items-center justify-content-center">
+                                <img src="Content/images/Customize your experience.jpg">
+                            </div>
+                            <p id="counters" data-number="120">0</p>
+                            <h5 class="text-uppercase">EXPERT INSTRUCTORS</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="counter__item text-center">
+                            <div class="item__image d-flex align-items-center justify-content-center">
+                                <img src="Content/images/Launch product.jpg">
+                            </div>
+                            <p id="counters" data-number="8300">0</p>
+                            <h5 class="text-uppercase">HAPPY LEARNERS</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="counter__item text-center">
+                            <div class="item__image d-flex align-items-center justify-content-center">
+                                <img src="Content/images/Winner.jpg">
+                            </div>
+                            <p id="counters" data-number="32">0</p>
+                            <h5 class="text-uppercase">AWARDS ACHIEVED</h5>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--==================Counter Section=========================-->
+
+        <!--==================Subscribe Section=========================-->
+        <section class="generic-subscribe">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="subscribe__image">
+                            <img src="Content/images/Recruiting.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="subscribe__info">
+                            <h6 class="info__small-header">Subscribe now</h6>
+                            <h2 class="info__big-header">Get every single update you will get</h2>
+                            <form id="emailForm">
+                                <div class="form__input">
+                                    <span class="icon-message"></span>
+                                    <input id="email" type="text" name="user_email" placeholder="Enter email address">
+                                </div>
+                                <div class="form__button">
+                                    <button id="submit" class="yellow-button subscribe--button">Subscribe now</button>
+                                </div>
+                            </form>
+                            <p id="alertEmail" class="alert alert-danger">Enter A Valid Email!!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================Subscribe Section=========================-->
+        <!--==================Footer Section=========================-->
+        <footer class="generic-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer__info">
+                            <a href="#" class="info__logo text-uppercase">
+                                <img src="Content/images/Group 8.jpg">
+                                <span>for education</span>
+                            </a>
+    
+                            <div class="info__location">
+                                <span class="icon-location"></span>
+                                <span>1500 Treat Ave, Suite 200 San Francisco, CA 94110</span>
+                            </div>
+    
+                            <div class="info__mail">
+                                <span class="icon-message"></span>
+                                <span>vctung@outlook.com</span>
+                            </div>
+    
+                            <div class="info__phone">
+                                <span class="icon-phone"></span>
+                                <span>1-800-800-2299 (Support)</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                        <div class="footer__community header-collapse">
+                            <h4 class="text-capitalize"><span>Community</span><span class="icon-arrow-down"></span></h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-capitalize">Learners</a></li>
+                                <li><a href="#" class="text-capitalize">Partners</a></li>
+                                <li><a href="#" class="text-capitalize">Developers</a></li>
+                                <li><a href="#" class="text-capitalize">Beta Testers</a></li>
+                                <li><a href="#" class="text-capitalize">Translators</a></li>
+                                <li><a href="#" class="text-capitalize">Blog</a></li>
+                                <li><a href="#" class="text-capitalize">Tech Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                        <div class="footer__information header-collapse">
+                            <h4 class="text-capitalize">informations<span class="icon-arrow-down"></span></h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-capitalize">About</a></li>
+                                <li><a href="#" class="text-capitalize">Pricing</a></li>
+                                <li><a href="#" class="text-capitalize">Blog</a></li>
+                                <li><a href="#" class="text-capitalize">Careers</a></li>
+                                <li><a href="#" class="text-capitalize">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                        <div class="footer__more header-collapse">
+                            <h4 class="text-capitalize">more<span class="icon-arrow-down"></span></h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-capitalize">Press</a></li>
+                                <li><a href="#" class="text-capitalize">Investors</a></li>
+                                <li><a href="#" class="text-capitalize">Terms</a></li>
+                                <li><a href="#" class="text-capitalize">Privacy</a></li>
+                                <li><a href="#" class="text-capitalize">Help</a></li>
+                                <li><a href="#" class="text-capitalize">Accessibility</a></li>
+                                <li><a href="#" class="text-capitalize">Contact</a></li>
+                                <li><a href="#" class="text-capitalize">Articles</a></li>
+                                <li><a href="#" class="text-capitalize">Directory</a></li>
+                                <li><a href="#" class="text-capitalize">Affiliates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer__social">
+                    <p class="social__copyright">Copyright &copy; 2021 Tung Chi Vo</p>
+                    <div class="social__icons">
+                        <a href="#">
+                            <span class="icon-facebook"></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon-pinterest"></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon-tiwitter"></span>
+                        </a>
+                        <a href="#">
+                            <span class="icon-instegram"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--==================Footer Section=========================-->
+    </div>
+    
+
+    <script src="Content/JS/vendor/jquery-3.6.0.min.js"></script>
+    <script src="Content/JS/vendor/all.min.js"></script>
+    <script src="Content/JS/vendor/bootstrap.bundle.min.js"></script>
+    <script src="Content/JS/main.js"></script>
+</body>
+
+</html>

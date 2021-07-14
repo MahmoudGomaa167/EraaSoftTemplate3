@@ -1,0 +1,78 @@
+.home-page{
+    .home-page__counter{
+        background-color: $grayBackgroundColor;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        .counter__item{
+            .item__image{
+                max-width: 200px;
+                height: 200px;
+                margin: auto;
+            }
+           
+            p{
+                color: $mainColor;
+                font-family: $georgiaFont;
+                font-size: calc(60px + (60 - 48) * ((100vw - 1920px)/ (1920 - 1366)));
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            h5{
+                color: $subnumbersColors;
+                font-family: $interFont;
+                font-size: calc(16px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                font-weight: bold;
+                line-height: 1.5;
+                margin-top: -11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .home-page{
+        .home-page__counter{
+            .counter__item{ 
+                margin-bottom: 30px;
+                p{
+                    font-size: calc(60px + (60 - 48) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                h5{
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px){
+    .home-page{
+        .home-page__counter{
+            .counter__item{ 
+                margin-bottom: 30px;
+                p{
+                    font-size: calc(60px + (60 - 48) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                h5{
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .home-page{
+        .home-page__counter{
+            .counter__item{ 
+                margin-bottom: 30px;
+                p{
+                    font-size: calc(60px + (60 - 48) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+                h5{
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1366 - 320)));
+                }
+            }
+        }
+    }
+}

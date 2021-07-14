@@ -1,0 +1,191 @@
+.generic-nav{
+        .generic-nav__info-nav{
+            background-color: $yellowColor;
+            .info-nav__main-info{
+                padding: 15px 0;
+                color: $mainColor;
+                display: flex;
+                align-items: center;
+                font-size: calc(13px + (14 - 13) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-family: $interFont;
+                font-weight: 500;
+                line-height: 1.21;
+                color: $mainColor;
+                .main-info__location{
+                    margin-right: 48px;
+                }
+                .main-info__social-icons{
+                    margin-left: auto;
+                    font-size: calc(15px + (16 - 15) * ((100vw - 1366px)/ (1920 - 1366)));
+                    a{
+                        color: $mainColor;
+                        margin-right: 11px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .generic-nav__main-nav{
+            padding-top: 17px;
+            padding-bottom: 21px;
+            background-color: $grayBackgroundColor;
+            .navbar-brand{
+                color: $mainColor;
+                line-height: 1.33;
+                font-family: $interFont;
+                font-size: calc(21px + (24 - 21) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: 800;
+            }
+            .navbar-toggler{
+                &:focus{
+                    outline: none;
+                    box-shadow: none;  
+                  }
+                .navbar-toggler-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.25s;
+                    .icon-menu{
+                        &::before{
+                            color: $mainColor;
+                            transition: 0.25s;
+
+                        }
+                    }
+                }
+            }
+            .navbar-nav{
+                .nav-item{
+                    margin-right: 35px;
+                    &:last-child{
+                        margin-right: 64px;
+                    }
+                    .nav-link{
+                        color: $mainColor;
+                        font-family: $interFont;
+                        font-weight: bold;
+                        font-size: calc(16px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                        line-height: 1.31;
+                        padding: 0;
+                        }
+                    }
+                }
+                form{
+                    .yellow-button{
+                        margin-right: 16px;
+                }
+            }
+        }
+}
+
+@media (max-width: 481px){
+    .generic-nav{
+        .generic-nav__info-nav{
+            .info-nav__main-info{
+                align-items: start;
+                flex-direction: column;
+                justify-content: center;
+                font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                font-family: $interFont;
+                .main-info__location{
+                    margin-right: 48px;
+                    order: 1;
+                    margin: auto;
+                    margin-bottom: 5px;
+                }
+                .main-info__mail{
+                    order: 3;
+                    margin-left: auto;
+                }
+                .main-info__social-icons{
+                    margin-left: auto;
+                    order: 2;
+                    font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 5px;
+                    
+                }
+            }
+        }
+        .generic-nav__main-nav{
+            .navbar-brand{
+                font-size: calc(21px + (24 - 21) * ((100vw - 320px)/ (1366 - 320)));
+            }
+            .navbar-nav{
+                .nav-item{
+                    margin-right: 0;
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $mainColor;
+                        bottom: 0;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    .nav-link{
+                        color: $mainColor;
+                        font-family: $interFont;
+                        font-weight: bold;
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                        line-height: 1.31;
+                        padding: 0;
+                        }
+                    }
+                }
+                form{
+                    .yellow-button{
+                        margin-right: 16px;
+                }
+            }
+        }
+}
+}
+
+@media (max-width: 320px){
+    .generic-nav{
+        .generic-nav__main-nav{
+            padding-top: 17px;
+            padding-bottom: 21px;
+            background-color: $grayBackgroundColor;
+            .navbar-brand{
+                color: $mainColor;
+                line-height: 1.33;
+                font-family: $interFont;
+                font-size: calc(21px + (24 - 21) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: 800;
+            }
+            .navbar-nav{
+                .nav-item{
+                    margin-right: 35px;
+                    &:last-child{
+                        margin-right: 64px;
+                    }
+                    .nav-link{
+                        color: $mainColor;
+                        font-family: $interFont;
+                        font-weight: bold;
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                        line-height: 1.31;
+                        padding: 0;
+                        }
+                    }
+                }
+                form{
+                    .yellow-button{
+                        margin-right: 16px;
+                }
+            }
+        }
+}
+}

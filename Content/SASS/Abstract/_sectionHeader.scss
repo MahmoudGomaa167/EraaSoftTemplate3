@@ -1,0 +1,68 @@
+.generic-header{
+    .small-header{
+        color: $yellowColor;
+        font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+        font-family: $interFont;
+        font-weight: bold;
+        line-height: 3.75;
+        margin-bottom: -17px;
+    }
+    .big-header{
+        color: $mainColor;
+        font-size: calc(35px + (48 - 35) * ((100vw - 1366px)/ (1920 - 1366)));
+        font-family: $georgiaFont;
+        font-weight: bold;
+        line-height: 1.25;
+        max-width: 80%;
+        text-transform: uppercase;
+        
+    }
+}
+
+@media (max-width: 1366px){
+    .generic-header{
+        .small-header{
+            font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 320)));  
+        }
+        .big-header{
+            font-size: calc(40px + (48 - 40) * ((100vw - 320px)/ (1366 - 320))); 
+        }
+    } 
+}
+
+@media (max-width: 1025px){
+    .generic-header{
+        .small-header{
+            font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 320)));  
+        }
+        .big-header{
+            font-size: calc(40px + (48 - 40) * ((100vw - 320px)/ (1366 - 320))); 
+        }
+    } 
+}
+
+@media (max-width: 481px){
+    .generic-header{
+        .small-header{
+            font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 320)));  
+        }
+        .big-header{
+            font-size: calc(40px + (48 - 40) * ((100vw - 320px)/ (1366 - 320))); 
+            max-width: 100%;
+        }
+    } 
+}
+
+@media (max-width: 320px){
+    .generic-header{
+        .small-header{
+            font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 320)));  
+        }
+        .big-header{
+            font-size: calc(35px + (40 - 35) * ((100vw - 320px)/ (1366 - 320))); 
+            max-width: 100%;
+        }
+    } 
+}
+
+

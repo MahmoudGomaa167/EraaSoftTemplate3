@@ -1,0 +1,427 @@
+.home-page{
+    .home-page__student{
+        margin-top: 114px;
+        padding-bottom: 112px;
+        .col-md-6:first-child{
+            padding-left: 29px;
+        }
+        .student__image{
+            img{
+                width: 100%;
+            }
+            .image__small-img{
+                position: absolute;
+                top: -34px;
+                left: -29px;
+                border-radius: 6px;
+            }
+            .image__caption{
+                position: absolute;
+                text-align: center;
+                background-color: #fff;
+                border-radius: 6px;
+                box-shadow: 0 4px 43px 0 rgba(0, 0, 0, 0.03);
+                min-width: 400px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -38.5px;
+                padding: 16px 16px 14px 16px;
+                h4{
+                    color: $mainColor;
+                    font-size: calc(18px + (20 - 18) * ((100vw - 1366px)/ (1920 - 1366)));
+                    font-family: $interFont;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: calc(12px + (14 - 12) * ((100vw - 1366px)/ (1920 - 1366)));
+                    font-family: $interFont;
+                    line-height: 1.71;
+                    color: $subHeaderColor;
+                }
+            }
+        }
+        .student__info{
+            .info__big-header{
+                font-size: calc(48px + (48 - 48) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-family: $georgiaFont;
+                font-weight: bold;
+                line-height: 1.25;
+                color: $mainColor;
+                margin-top: -6px;
+                margin-bottom: 16px;
+                span{
+                    color: $yellowColor;
+                }
+            }
+            .info__paragraph{
+                color: $mainColor;
+                font-size: calc(15px + (15 - 15) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-family: $interFont;
+                line-height: 1.5;
+                margin-bottom: 45px;
+            }
+            .info__small-header{
+                color: $mainColor;
+                font-family: $interFont;
+                font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: bold;
+                line-height: 1.5;
+                margin-bottom: 13px;
+            }
+            .info__caption{
+                background-color: $grayBackgroundColor;
+                max-width: 511px;
+                left: 63px;
+                padding: 0 41px 0 41px;
+                border-radius: 6px;
+                .caption__header{
+                    font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                    font-family: $interFont;
+                    font-weight: bold;
+                    color: $mainColor;
+                    line-height: 1.5;
+                    padding-top: 24px;
+                    margin-bottom: 2px;
+                }
+                .caption__footer{
+                    color: $subHeaderColor;
+                    font-family: $subHeaderColor;
+                    font-size: calc(14px + (14 - 12) * ((100vw - 1366px)/ (1920 - 1366)));
+                    line-height: 1.71;
+                    padding-bottom: 24px;
+                }
+                .caption__image{
+                    position: absolute;
+                    border-radius: 6px;
+                    background-image: url(../images/card9.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    min-width: 80px;
+                    min-height: 80px;
+                    left: -63px;
+                    top: 8px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1025px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    left: -15px;
+                }
+                .image__caption{
+                    min-width: 328px;
+                    h4{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(30px + (35 - 30) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));   
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 24px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 86%;
+                    left: 65px;
+                    
+                    .caption__header{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 1920px)/ (1920 - 1366)));
+                        font-family: $interFont;
+                        font-weight: bold;
+                        color: $mainColor;
+                        line-height: 1.5;
+                        padding-top: 24px;
+                        margin-bottom: 2px;
+                    }
+                    .caption__footer{
+                        color: $subHeaderColor;
+                        font-family: $subHeaderColor;
+                        font-size: calc(12px + (14 - 12) * ((100vw - 1920px)/ (1920 - 1366)));
+                        line-height: 1.71;
+                        padding-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 992px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                
+                img{
+                    width: 100%;
+                }
+                
+                .image__caption{
+                    min-width: 328px;
+                    h4{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(37px + (37 - 37) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(14px + (14 - 14) * ((100vw - 320px)/ (1366 - 320)));   
+                    margin-bottom: 13px;
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 10px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 92%;
+                    left: 39px;
+                    
+                    .caption__header{
+                        font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 1366)));
+                        
+                    }
+                    .caption__footer{
+                       
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 1366)));
+                        
+                    }
+                    .caption__image{
+                       min-width: 60px;
+                       min-height: 60px;
+                       left: -38px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    width: 80px;
+                    height: 80px;
+                    left: -14px;
+                }
+                .image__caption{
+                    min-width: 260px;
+                    h4{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(28px + (28 - 28) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 4px;
+                }
+                .info__paragraph{
+                    font-size: calc(10px + (10 - 10) * ((100vw - 320px)/ (1366 - 320)));  
+                     margin-bottom: 15px;
+                }
+                .info__small-header{
+                   
+                    font-size: calc(12px + (12 - 12) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 5px;
+                    
+                }
+                .info__caption{
+                    padding: 0 20px 0 20px;
+                    max-width: 91%;
+                    left: 39px;
+                    .caption__header{
+                        font-size: calc(12px + (12 - 12) * ((100vw - 320px)/ (1920 - 1366)));
+                        padding-top: 16px;
+                        
+                    }
+                    .caption__footer{
+                        padding-bottom: 16px;
+                        font-size: calc(11px + (11 - 11) * ((100vw - 320px)/ (1920 - 1366)));
+                        
+                    }
+                    .caption__image{
+                        min-width: 60px;
+                        min-height: 60px;
+                        left: -46px;
+                         top: 5px;
+                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                
+                margin-bottom: 60px;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    width: 80px;
+                    height: 80px;
+                    left: -14px;
+                }
+                .image__caption{
+                    min-width: 328px;
+                    
+                    h4{
+                        font-size: calc(20px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(16px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(30px + (30 - 25) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(16px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));  
+                    margin-bottom: 15px; 
+                }
+                .info__small-header{
+                   
+                    font-size: calc(14px + (14 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 15px;
+                    
+                }
+                .info__caption{
+                    padding: 0 20px 0 20px;
+                    max-width: 86%;
+                    left: 65px;
+                    
+                    
+                    .caption__header{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__footer{
+                        
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__image{
+                        min-width: 80px;
+                        min-height: 80px;
+                        left: -63px;
+                         top: 8px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .home-page{
+        .home-page__student{
+            .student__image{
+                
+                margin-bottom: 60px;
+                img{
+                    width: 100%;
+                }
+                .image__small-img{
+                    width: 60px;
+                    height: 60px;
+                    left: -14px;
+                }
+                .image__caption{
+                    min-width: 200px;
+                    
+                    
+                    h4{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    p{
+                        font-size: calc(12px + (14 - 12) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+            .student__info{
+                .info__big-header{
+                    font-size: calc(20px + (25 - 20) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .info__paragraph{
+                    font-size: calc(12px + (14 - 12) * ((100vw - 320px)/ (1366 - 320)));  
+                    margin-bottom: 15px; 
+                }
+                .info__small-header{
+                   
+                    font-size: calc(12px + (14 - 12) * ((100vw - 320px)/ (1366 - 320)));
+                    margin-bottom: 15px;
+                    
+                }
+                .info__caption{
+                  
+                    max-width: 89%;
+                    padding: 0 20px 0 20px;
+                    left: 32px;
+                    .caption__header{
+                        font-size: calc(11px + (11 - 11) * ((100vw - 320px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__footer{
+                        
+                        font-size: calc(10px + (10 - 10) * ((100vw - 320px)/ (1366 - 320)));
+                        
+                    }
+                    .caption__image{
+                        min-width: 45px;
+                        min-height: 45px;
+                        left: -29px;
+                         top: 21px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

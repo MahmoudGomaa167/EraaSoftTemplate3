@@ -1,0 +1,267 @@
+.generic-footer{
+        background-color: $mainColor;
+        padding-top: 80px;
+        color: #fff;
+        .footer__info{
+            a{
+                color: #fff;
+                font-size: calc(20px + (23 - 20) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-family: $interFont;
+                font-weight: 800;
+                line-height: 1.35;
+                transform: rotateY(360deg);
+            }
+            .info__location{
+                margin-top: 35px;
+                margin-bottom: 25px;
+                display: flex;
+                max-width: 223px;
+                .icon-location{
+                    font-size: calc(12px + (14 - 12) * ((100vw - 1366px)/ (1920 - 1366)));
+                    margin-right: 11px;
+                }
+                span{
+                    font-family: $interFont;
+                    font-weight: 500;
+                    font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                    line-height: 1.06;
+                }
+            }
+            .info__mail{
+                margin-bottom: 27px;
+                .icon-message{
+                    margin-right: 4px;
+                }
+                span{
+                    font-family: $interFont;
+                    font-weight: 500;
+                    font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                    line-height: 1.06;
+                }
+            }
+            .info__phone{
+                .icon-phone{
+                    margin-right: 4px;
+                }
+                span{
+                    font-family: $interFont;
+                    font-weight: 500;
+                    font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                    line-height: 1.06;
+                }
+            }
+        }
+        .footer__community{
+            h4{
+                display: flex;
+                align-items: center;
+                font-family: $interFont;
+                font-size: calc(18px + (20 - 18) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: bold;
+                line-height: 1.8;
+            }
+            ul{
+                li{
+                    a{
+                        color: #fff;
+                        font-family: $interFont;
+                        font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                        line-height: 2.25;
+                    }
+                }
+            }
+        }
+        .footer__information{
+            h4{
+                display: flex;
+                align-items: center;
+                font-family: $interFont;
+                font-size: calc(18px + (20 - 18) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: bold;
+                line-height: 1.8;
+            }
+            ul{
+                li{
+                    a{
+                        color: #fff;
+                        font-family: $interFont;
+                        font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                        line-height: 2.25;
+                    }
+                }
+            }
+        }
+        .footer__more{
+            h4{
+                display: flex;
+                align-items: center;
+                font-family: $interFont;
+                font-size: calc(18px + (20 - 18) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: bold;
+                line-height: 1.8;
+            }
+            ul{
+                li{
+                    a{
+                        color: #fff;
+                        font-family: $interFont;
+                        font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                        line-height: 2.25;
+                    }
+                }
+            }
+        }
+        .footer__social{
+            background-color: $yellowColor;
+            display: flex;
+            align-items: center;
+            padding: 16px 36px;
+            margin-top: 19px;
+            .social__copyright{
+                color: $mainColor;
+                font-size: calc(14px + (16 - 14) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-family: $interFont;
+                line-height: 3.75;
+                flex: 0 0 50%;
+                margin-bottom: 0;
+            }
+            .social__icons{
+                flex: 0 0 50%;
+               text-align: right;
+                a{
+                    color: $mainColor;
+                    line-height: 3.75;
+                    margin-right: 16px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+@media (max-width: 1366px){
+    .generic-footer{
+        .footer__info{
+            .info__location{
+                max-width: 220px;
+                span{
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+            .info__mail{
+                span{
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+            .info__phone{
+                span{
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+        }
+        .footer__community{
+            h4{
+                font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+            }
+            ul{
+                li{
+                    a{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+        }
+        .footer__information{
+            h4{
+                font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+            }
+            ul{
+                li{
+                    a{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+        }
+        .footer__more{
+            h4{
+                font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+            }
+            ul{
+                li{
+                    a{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+        }
+        .footer__social{
+            align-items: center;
+            .social__copyright{
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                flex: 0 0 50%;
+            }
+            .social__icons{
+                flex: 0 0 50%;
+                margin-left: auto;
+            }
+        }
+    }
+}    
+
+@media (max-width: 481px){
+    .generic-footer{
+        .footer__info{
+            margin-bottom: 20px;
+            .info__location{
+                max-width: 100%;
+                align-items: center; 
+            }
+        }
+        .footer__community{
+            ul{
+                li{
+                    a{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+        }
+        .footer__information{
+            ul{
+                li{
+                    a{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+        }
+        .footer__more{
+            ul{
+                li{
+                    a{
+                        font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            }
+        }
+        .footer__social{
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 0;
+            .social__copyright{
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                flex: 0 0 100%;
+                line-height: 1.5;
+            }
+            .social__icons{
+                font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+                flex: 0 0 100%;
+                margin: auto;
+                line-height: 1;
+            }
+        }
+    }
+}
