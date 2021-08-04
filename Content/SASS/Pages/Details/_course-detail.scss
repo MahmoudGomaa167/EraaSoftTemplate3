@@ -1,0 +1,227 @@
+.detail-page{
+    .course-detail{
+        margin-top: -309px;
+        padding-bottom: 46px;
+        .detail-info{
+            margin-bottom: 36px;
+            .course-image{
+                border: 1px solid #bdbdbd;
+                border-radius: 6px;
+                margin-right: 5px;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .course-info{
+                padding: 17px 0;
+                height: 100%;
+                border: 1px solid #bdbdbd;
+                border-radius: 6px;
+                background-color: #fff;
+                color: #212529;
+                .info-brief{
+                    padding-left: 23px;
+                    border-bottom: 1px solid #bdbdbd;
+                    padding-bottom: 17px;
+                    &:last-of-type{
+                        margin-bottom: 181px;
+                    }
+                    .title{
+                        font-weight: bold;
+                    }
+                    
+                }
+                .info-contact{
+                    text-align: center;
+                    font-family: $interFont;
+                    font-size: calc(13px + (14 - 13) * ((100vw - 1366px)/ (1920 - 1366)));
+                    p{
+                        margin-bottom: 0;
+                    }
+                    span{
+                        font-weight: bold;
+                        color: #00b2b2;
+                    }
+                }
+                  
+            }
+        }
+        
+        .course-description{
+            margin-bottom: 35px;
+            h3{
+                color: $mainColor;
+                line-height: 0.67;
+                font-family: $georgiaFont;
+                font-size: calc(36px + (36 - 36) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+            p{
+                color: $mainColor;
+                font-family: $interFont;
+                line-height: 1.5;
+                font-size: calc(15px + (15 - 15) * ((100vw - 1366px)/ (1920 - 1366)));
+            }
+        }
+        .course-benefit{
+            h3{
+                color: $mainColor;
+                line-height: 0.67;
+                font-family: $georgiaFont;
+                font-size: calc(36px + (36 - 36) * ((100vw - 1366px)/ (1920 - 1366)));
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+            .benefit-list{
+                display: flex;
+                flex-direction: column;
+                .list-item{
+                    display: flex;
+                    align-items: baseline;
+                    .icon-check{
+                        color: #00b2b2;
+                        margin-right: 16px;
+                    }
+                    p{
+                        color: $mainColor;
+                        font-family: $interFont;
+                        line-height: 1.5;
+                        font-size: calc(15px + (15 - 15) * ((100vw - 1366px)/ (1920 - 1366)));
+                        .item-title{
+                            font-weight: bold;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .detail-page{
+        .course-detail{
+            .detail-info{
+                .course-info{
+                    .info-brief{
+                        font-size: calc(14px + (14 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .info-contact{
+                        font-size: calc(13px + (13 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                      
+                }
+            }
+            
+            .course-description{
+                h3{
+                    font-size: calc(30px + (30 - 30) * ((100vw - 320px)/ (1366 - 320)));
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                }
+            }
+            .course-benefit{
+                h3{
+                    font-size: calc(30px + (30 - 30) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .detail-page{
+        .course-detail{
+            .detail-info{
+                .course-image{
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                    height: auto;
+                }
+                .course-info{
+                    .info-brief{
+                        font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+                        
+                    }
+                    .info-contact{
+                        font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+                       
+                    }
+                      
+                }
+            }
+            
+            .course-description{
+                margin-bottom: 35px;
+                h3{
+                    font-size: calc(36px + (36 - 36) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                p{
+                    font-size: calc(15px + (15 - 15) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+            .course-benefit{
+                h3{
+                    font-size: calc(36px + (36 - 36) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .benefit-list{
+                    display: flex;
+                    flex-direction: column;
+                    .list-item{           
+                        p{
+                            font-size: calc(15px + (15 - 15) * ((100vw - 320px)/ (1366 - 320)));
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px){
+    .detail-page{
+        .course-detail{
+            .detail-info{
+                .course-info{
+                    .info-brief{
+                        font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                        
+                    }
+                    .info-contact{
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                       
+                    }
+                      
+                }
+            }
+            
+            .course-description{
+                h3{
+                    font-size: calc(25px + (25 - 25) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                p{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+            .course-benefit{
+                h3{
+                    font-size: calc(25px + (25 - 25) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .benefit-list{
+                    display: flex;
+                    flex-direction: column;
+                    .list-item{           
+                        p{
+                            font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

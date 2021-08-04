@@ -1,0 +1,49 @@
+.detail-page{
+    .detail-page__header{
+        background-color: $grayBackgroundColor;
+        padding-top: 15px;
+        padding-bottom: 318px;
+        .generic-header{
+            .big-header{
+                max-width: 50%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .detail-page{
+        .detail-page__header{
+            .generic-header{
+                .big-header{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .detail-page{
+        .detail-page__header{
+            .generic-header{
+                .big-header{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px){
+    .detail-page{
+        .detail-page__header{
+            .generic-header{
+                .big-header{
+                    font-size: calc(25px + (25 - 25) * ((100vw - 320px)/ (1366 - 320)));
+                }
+            }
+        }
+    }
+}

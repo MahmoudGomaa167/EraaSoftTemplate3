@@ -1,0 +1,15 @@
+.detail-page{
+    .generic-student{
+        background-color: $grayBackgroundColor;
+        margin-top: 0;
+        padding: 112px 0 88px;
+        .student__info{
+            .info__caption{
+                background-color: #fff;
+                .caption__image{
+                    background-image: url(../images/card1.jpg);
+                }
+            }
+        }
+    }
+}

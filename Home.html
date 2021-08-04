@@ -14,6 +14,12 @@
 
 <body>
     <div class="white-overlay"></div>
+    <div class="search-page">
+        <div class="container">
+            <input type="search" name="user_search" placeholder="Search For something...">
+            <span id="close" class="icon-cross"></span>
+        </div>
+    </div>
     <div class="home-page">
         <div class="generic-nav">
             <!--==================Main Info Navbar=========================-->
@@ -70,19 +76,19 @@
                                 <a class="nav-link text-capitalize" href="Home.html">home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-capitalize" href="#">about</a>
+                                <a class="nav-link text-capitalize" href="About.html">about</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-capitalize" href="Listing.html">courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-capitalize" href="#">contact</a>
+                                <a class="nav-link text-capitalize" href="Contact us.html">contact</a>
                             </li>
 
                         </ul>
                         <form class="d-flex">
-                            <button class="yellow-button">sign up</button>
-                            <button class="search-button">
+                            <button class="yellow-button"><a href="Sign Up.html">sign up</a></button>
+                            <button type="button" class="search-button">
                                 <span class="icon-search"></span>
                             </button>
                         </form>
@@ -359,7 +365,7 @@
         <!--==================Courses Section=========================-->
 
         <!--==================Successful Student Section=========================-->
-        <section class="home-page__student">
+        <section class="generic-student">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -374,7 +380,7 @@
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="col-md-6">
                         <div class="student__info">
                             <h2 class="info__big-header">Successful Student <span>Feedback</span></h2>
@@ -573,6 +579,7 @@
     <script src="Content/JS/vendor/jquery-3.6.0.min.js"></script>
     <script src="Content/JS/vendor/all.min.js"></script>
     <script src="Content/JS/vendor/bootstrap.bundle.min.js"></script>
+    <script src="Content/JS/vendor/jquery.validate.min.js"></script>
     <script src="Content/JS/main.js"></script>
 </body>
 

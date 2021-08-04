@@ -1,0 +1,202 @@
+.contact-page{
+    .contact-page__header{
+        padding-top: 15px;
+        background-color: $grayBackgroundColor;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        .big-header{
+            font-family: $georgiaFont;
+            color: $mainColor;
+            font-weight: bold;
+        }
+    }
+    .contact-page__info{
+        padding-bottom: 100px;
+        .info-form{
+            margin-right: 30px;
+            h5{
+                background-color: $grayBackgroundColor;
+                font-family: $georgiaFont;
+                padding: 10px 0;
+                span{
+                    background-color: $mainColor;
+                    color: #fff;
+                    padding: 10px 20px;
+                }
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                p{
+                    color: #bdbdbd;
+                    font-style: italic;
+                    font-family: $interFont;
+                }
+                input{
+                    padding: 10px 15px;
+                    border: 1px solid #bdbdbd;
+                    border-radius: 6px;
+                    margin-bottom: 20px;
+                    &:focus{
+                        border: 1px solid $mainColor;
+                    }
+                }
+                textarea{
+                    margin-bottom: 20px;
+                    padding: 10px 15px;
+                    border: 1px solid #bdbdbd;
+                    border-radius: 6px;
+                    &:focus{
+                        border: 1px solid $mainColor;
+                    }
+                }
+            }
+
+            button{
+                background-color: $yellowColor;
+                color: $mainColor;
+                font-family: $interFont;
+                min-width: 180px;
+                border: none;
+                border-radius: 6px;
+                padding: 10px 20px;
+            }
+            
+        }
+
+        .info-brief{
+            h5{
+                background-color: $grayBackgroundColor;
+                font-family: $georgiaFont;
+                padding: 10px 0;
+                margin-bottom: 15px;
+                span{
+                    background-color: $mainColor;
+                    color: #fff;
+                    padding: 10px 20px;
+                }
+            }
+            .brief-address{
+                color: #bdbdbd;
+                font-family: $interFont;
+                line-height: 2;
+                position: relative;
+                padding-bottom: 15px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 25%;
+                    height: 1px;
+                    background-color: #bdbdbd;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+            .brief-phone{
+                color: #bdbdbd;
+                font-family: $interFont;
+                line-height: 2;
+                margin-bottom: 0;
+            }
+            .brief-mobile{
+                color: #bdbdbd;
+                font-family: $interFont;
+                line-height: 2;
+                position: relative;
+                padding-bottom: 15px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 25%;
+                    height: 1px;
+                    background-color: #bdbdbd;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+            .brief-general{
+                color: #bdbdbd;
+                font-family: $interFont;
+                line-height: 2;
+                margin-bottom: 0;
+            }
+            .brief-editor{
+                color: #bdbdbd;
+                font-family: $interFont;
+                line-height: 2;
+                position: relative;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .contact-page{
+        .contact-page__info{
+            .info-form{
+                margin-right: 15px;
+                form{
+                    p{
+                        font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }  
+            }
+    
+            .info-brief{
+                .brief-address{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .brief-phone{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .brief-mobile{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .brief-general{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    
+                }
+                .brief-editor{
+                    font-size: calc(14px + (15 - 14) * ((100vw - 320px)/ (1366 - 320)));
+                    
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .contact-page{
+        .contact-page__info{
+            .info-form{
+                margin-bottom: 30px;
+                form{
+                    p{
+                        font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }  
+            }
+    
+            .info-brief{
+                .brief-address{
+                    font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .brief-phone{
+                    font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .brief-mobile{
+                    font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+                }
+                .brief-general{
+                    font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+
+                }
+                .brief-editor{
+                    font-size: calc(17px + (18 - 17) * ((100vw - 320px)/ (1366 - 320)));
+
+                }
+            }
+        }
+    }
+}

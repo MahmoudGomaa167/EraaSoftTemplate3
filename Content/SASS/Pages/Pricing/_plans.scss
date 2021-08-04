@@ -1,0 +1,278 @@
+.pricing-page{
+    .pricing-page__header{
+        background-color: $grayBackgroundColor;
+        padding-top: 46px;
+        padding-bottom: 112px;
+        .header__content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .generic-header{
+                .big-header{
+                    max-width: 100%;
+                }
+            }
+            .content__switch{
+                background-color: #fff;
+                border-radius: 6px;
+                padding: 4px;
+                .month{
+                    background-color: #00b2b2;
+                    color: #fff;
+                    border: none;
+                    border-radius: 4px;
+                    text-align: center;
+                    font-family: $interFont;
+                    font-weight: 500;
+                    line-height: 1.31;
+                    padding: 12px 20px;
+                    min-width: 115px;
+                    margin-right: 6px;
+                }
+                .year{
+                    background-color: #fff;
+                    color: $mainColor;
+                    border: none;
+                    border-radius: 4px;
+                    text-align: center;
+                    font-family: $interFont;
+                    font-weight: 500;
+                    line-height: 1.31;
+                    padding: 12px 20px;
+                    min-width: 115px;
+                }
+            }
+        }
+            .plan__item{
+                border: 1px solid #bdbdbd;
+                border-radius: 6px;
+                background-color: #fff;
+                padding: 48px 36px;
+                position: relative;
+                flex: 0 0 31.5%;
+                .item__price{
+                    font-family: $georgiaFont;
+                    color: $mainColor;
+                    line-height: 1.61;
+                    font-size: calc(55px + (60 - 55) * ((100vw - 1366px)/ (1920 - 1366)));
+                    font-weight: bold;
+                    margin-top: 16px;
+                    .dollar-sign{
+                        font-size: calc(22px + (24 - 22) * ((100vw - 1366px)/ (1920 - 1366)));
+                        font-weight: bold;
+                        line-height: 2.5;
+                    }
+                }
+                .item__desc{
+                    font-family: $interFont;
+                    color: #bdbdbd;
+                    margin-bottom: 19px;
+                }
+                hr{
+                    height: 0;
+                    border: 1px solid #bdbdbd;
+                }
+                .item__properties{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        font-family: $interFont;
+                        color: $mainColor;
+                        margin-bottom: 10px;
+                        .icon-check{
+                            margin-right: 18px;
+                        }
+                        .green{
+                            color: #00b2b2;
+                        }
+                        .gray{
+                            color: #bdbdbd;
+                        }
+                    }
+                }
+                .item__purchase{
+                    min-width: 100%;
+                    padding: 13px 20px;
+                    border-radius: 4px;
+                    background-color: $mainColor;
+                    color: #fff;
+                    font-family: $interFont;
+                    font-weight: 500;
+                    line-height: 1.31;
+                    border: none;
+                }
+                .yellow{
+                    background-color: $yellowColor;
+                    color: $mainColor;
+                }
+                .item__type{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #0053a7;
+                    color: #fff;
+                    font-family: $interFont;
+                    font-weight: bold;
+                    min-width: 144px;
+                    text-align: center;
+                    padding: 6px 20px;
+                }
+                .prem-back{
+                    background-color: #033977;
+                }
+                .enter-back{
+                    background-color: $mainColor;
+                }
+            }
+        
+    }
+}
+
+@media(max-width: 768px){
+    .pricing-page{
+        .pricing-page__header{
+            padding-bottom: 90px;
+            .header__content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .generic-header{
+                    margin-bottom: 10px;
+                }
+                .content__switch{
+                    background-color: #fff;
+                    border-radius: 6px;
+                    padding: 4px;
+                    margin: auto;
+                    
+                }
+            }
+                .plan__item{
+                    .item__price{
+                        font-size: calc(35px + (40 - 35) * ((100vw - 320px)/ (1366 - 320)));
+                        font-weight: bold;
+                        margin-top: 16px;
+                        .dollar-sign{
+                            font-size: calc(18px + (20 - 18) * ((100vw - 320px)/ (1366 - 320)));
+                        }
+                    }
+                    .item__desc{
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                        text-align: center;
+                    }
+                    .item__properties{
+                        li{
+                            align-items: baseline;
+                            font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                            .icon-check{
+                                margin-right: 10px;
+                            }
+                        
+                        }
+                    }
+                    .item__purchase{
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .yellow{
+                        background-color: $yellowColor;
+                        color: $mainColor;
+                    }
+                    .item__type{
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .prem-back{
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .enter-back{
+                        font-size: calc(13px + (14 - 13) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .pricing-page{
+        .pricing-page__header{
+            padding-bottom: 90px;
+                .plan__item{
+                    margin-bottom: 30px;
+                    .item__price{
+                        font-size: calc(55px + (60 - 55) * ((100vw - 320px)/ (1366 - 320)));
+                        .dollar-sign{
+                            font-size: calc(22px + (24 - 22) * ((100vw - 320px)/ (1366 - 320)));
+                        }
+                    }
+                    .item__desc{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                        text-align: left;
+                    }
+                    .item__properties{
+                        li{
+                            align-items: baseline;
+                            font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                            .icon-check{
+                                margin-right: 18px;
+                            }
+                        
+                        }
+                    }
+                    .item__purchase{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .item__type{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .prem-back{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .enter-back{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            
+        }
+    }
+}
+
+@media(max-width: 320px){
+    .pricing-page{
+        .pricing-page__header{
+            padding-bottom: 60px;
+                .plan__item{
+                    margin-bottom: 30px;
+                    .item__desc{
+                        font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 320)));
+                        text-align: center;
+                    }
+                    .item__properties{
+                        li{
+                            font-size: calc(15px + (16 - 15) * ((100vw - 320px)/ (1366 - 320)));
+                            .icon-check{
+                                margin-right: 10px;
+                            }
+                        
+                        }
+                    }
+                    .item__purchase{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .item__type{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .prem-back{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                    .enter-back{
+                        font-size: calc(16px + (18 - 16) * ((100vw - 320px)/ (1366 - 320)));
+                    }
+                }
+            
+        }
+    }
+}

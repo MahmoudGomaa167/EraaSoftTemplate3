@@ -62,20 +62,43 @@ $('document').ready(function () {
         });
 
     }
+
+    // Search Function
+    let search = function () {
+        let searchBtn = $('.icon-search'),
+            closeBtn = $('#close'),
+            searchLayer = $('.search-page');
+
+        $(searchBtn).click(function () {
+            $(searchLayer).slideDown(500);
+            $(searchLayer).css({
+                display: 'flex',
+                alignItems: 'center'
+            });
+            $('body').css('overflow', 'hidden');
+        });
+
+        $(closeBtn).click(function () {
+            $(searchLayer).slideUp(500, function () {
+                $('body').css('overflow', 'auto');
+            });
+        });
+    }
     /************************************************************************************************************/
     // Home Page
     if ($('.home-page').length > 0) {
+        // Search Layer When clicking on search button
+        search();
+
         // Change Icon of Menu
         menuResponsive();
         // Event Time Countdown
-        let currentDate,
-            eventDate;
+        let currentDate = new Date().getTime(),
+            eventDate = new Date('Jul 17 2021 19:00:00').getTime();
 
 
         function eventTime() {
-            let currentDate = new Date().getTime(),
-                eventDate = new Date('Jul 17 2021 19:00:00').getTime(),
-                remTime = eventDate - currentDate,
+            let remTime = eventDate - currentDate,
                 days = Math.trunc(remTime / (1000 * 60 * 60 * 24)),
                 hours = Math.trunc(remTime / (1000 * 60 * 60)),
                 minutes = Math.trunc(remTime / (1000 * 60)),
@@ -104,7 +127,7 @@ $('document').ready(function () {
                 height: '198px'
             });
         } else {
-            console.log(setInterval(eventTime, 1000));
+            setInterval(eventTime, 1000);
         }
 
 
@@ -137,7 +160,7 @@ $('document').ready(function () {
         });
 
         // Email Validation
-        emailValidate();
+       emailValidate();
 
         // Footer Slide down list
         let mq = window.matchMedia('(max-width: 481px)');
@@ -146,11 +169,145 @@ $('document').ready(function () {
     /************************************************************************************************************/
     // Course Page
     if ($('.course-page').length > 0) {
+        let id = '';
+        // Search Layer When clicking on search button
+        search();
+
         // Change Icon of Menu
         menuResponsive();
 
         // Email Validation
         emailValidate();
+
+        // Footer Slide down list
+        let mq = window.matchMedia('(max-width: 481px)');
+        window.addEventListener('resize', media(mq));
+
+        // Request
+        $('#categories').change(function(){
+            id = $('#categories').val();
+            getData(id);
+        });
+
+        let listingWrapper = $(".listing-wrapper");
+        async function getData(id) {
+            let response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+            let responseData = await response.json();
+            // console.log(responseData)
+            let newArr = [];
+
+            if(id > 0){
+                listingWrapper.empty();
+                newArr.push(responseData);
+            }
+            else{
+                newArr = responseData;
+            }
+
+           
+            newArr.forEach((post,index) => {
+               
+                if(index < 3){
+                    listingWrapper.append(`
+                    <div class="col-md-4">
+                       <div class="custom-card">
+                           <div class="card__image-border">
+                               <div class="inner-image">
+                                   <img src="Content/images/card1.jpg">
+                               </div>
+                           </div>
+                           <div class="item__title">
+                               <h4>${post.title}</h4>
+                           </div>
+                           <div class="item__footer">
+                               <p>${post.id}</p>
+                           </div>
+               
+                           <div class="card__small-image">
+                               <img src="Content/images/small1.jpg">
+                           </div>
+                       </div>
+                     </div>`
+                )
+                    
+                }
+           
+
+            })
+        }
+        getData(id);
+
+        //observer
+    //    let observer = new IntersectionObserver((entries) =>{
+    //     //    console.log(entries);
+    //        getData(id);
+    //    })
+
+    //    let target = document.querySelector('.generic-subscribe');
+    //    observer.observe(target)
+
+    }
+
+    if ($('.pricing-page').length > 0) {
+        // Search Layer When clicking on search button
+        search();
+
+        // Change Icon of Menu
+        menuResponsive();
+
+        // Email Validation
+        emailValidate();
+
+        // Footer Slide down list
+        let mq = window.matchMedia('(max-width: 481px)');
+        window.addEventListener('resize', media(mq));
+    }
+
+    if ($('.detail-page').length > 0) {
+        // Search Layer When clicking on search button
+        search();
+
+        // Change Icon of Menu
+        menuResponsive();
+
+        // Email Validation
+        emailValidate();
+
+        // Footer Slide down list
+        let mq = window.matchMedia('(max-width: 481px)');
+        window.addEventListener('resize', media(mq));
+    }
+
+    if($('.signup-page').length > 0){
+        // Search Layer When clicking on search button
+        search();
+
+        // Change Icon of Menu
+        menuResponsive();
+
+        // Footer Slide down list
+        let mq = window.matchMedia('(max-width: 481px)');
+        window.addEventListener('resize', media(mq));
+    }
+
+    if($('.contact-page').length > 0){
+        // Search Layer When clicking on search button
+        search();
+
+        // Change Icon of Menu
+        menuResponsive();
+
+        // Footer Slide down list
+        let mq = window.matchMedia('(max-width: 481px)');
+        window.addEventListener('resize', media(mq));
+    }
+
+    if($('.about-page').length > 0){
+        // Search Layer When clicking on search button
+        search();
+
+        // Change Icon of Menu
+        menuResponsive();
 
         // Footer Slide down list
         let mq = window.matchMedia('(max-width: 481px)');

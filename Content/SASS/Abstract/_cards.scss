@@ -1,4 +1,5 @@
-.custom-card{
+@media(max-width: 1920px){
+    .custom-card{
         border: 1px solid #bdbdbd;
         border-radius: 6px;
         margin-bottom: 30px;
@@ -57,12 +58,30 @@
             height: 80px;
             background-color: $grayBackgroundColor;
             padding: 8px;
-            bottom: 102px;
+            bottom: 122px;
             left: 16px;
         }
     }
 
-@media (max-width: 1025px){
+}
+
+@media(max-width: 1366px){
+    .custom-card{
+        .card__small-image{
+            bottom: 116px;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .custom-card{
+        .card__small-image{
+            bottom: 96px;
+        }
+    }
+}
+
+@media (max-width: 1024px){
     .custom-card{
         .margin{
             margin-bottom: 17px;
@@ -78,7 +97,7 @@
             }
         }
         .card__small-image{
-            bottom: 98px;
+            bottom: 115px;
         }
     }
 }
@@ -106,6 +125,7 @@
             width: 60px;
             height: 60px;
             padding: 4px;
+            bottom: 86px;
             img{
                 width: 100%;
             }
