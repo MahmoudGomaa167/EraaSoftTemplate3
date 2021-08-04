@@ -160,7 +160,7 @@ $('document').ready(function () {
         });
 
         // Email Validation
-       emailValidate();
+        emailValidate();
 
         // Footer Slide down list
         let mq = window.matchMedia('(max-width: 481px)');
@@ -184,67 +184,79 @@ $('document').ready(function () {
         window.addEventListener('resize', media(mq));
 
         // Request
-        $('#categories').change(function(){
+        $('#categories').change(function () {
             id = $('#categories').val();
+            console.log(id)
             getData(id);
         });
 
         let listingWrapper = $(".listing-wrapper");
         async function getData(id) {
-            let response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+            let response = await fetch(`../listing.json`);
             let responseData = await response.json();
-            // console.log(responseData)
             let newArr = [];
 
-            if(id > 0){
+            if (id > 0) {
                 listingWrapper.empty();
                 newArr.push(responseData);
             }
-            else{
+            else {
                 newArr = responseData;
             }
 
-           
-            newArr.forEach((post,index) => {
-               
-                if(index < 3){
-                    listingWrapper.append(`
+
+
+            newArr.forEach((post, index) => {
+
+
+                listingWrapper.append(`
                     <div class="col-md-4">
                        <div class="custom-card">
                            <div class="card__image-border">
                                <div class="inner-image">
-                                   <img src="Content/images/card1.jpg">
+                                   <img src="${post.items[index].imgUrl}">
                                </div>
                            </div>
                            <div class="item__title">
-                               <h4>${post.title}</h4>
+                               <h4>${post.items[index].instructor}</h4>
                            </div>
                            <div class="item__footer">
                                <p>${post.id}</p>
                            </div>
                
                            <div class="card__small-image">
-                               <img src="Content/images/small1.jpg">
+                               <img src="${post.items[index].thambNailUrl}">
                            </div>
                        </div>
                      </div>`
+
+
                 )
-                    
-                }
-           
+
+
+
 
             })
         }
+
+        async function getLevel() {
+            let response = await fetch('../listing.json');
+            let responseData = await response.json();
+            let arrayLevel = [];
+
+
+        }
+
         getData(id);
 
         //observer
-    //    let observer = new IntersectionObserver((entries) =>{
-    //     //    console.log(entries);
-    //        getData(id);
-    //    })
+        //    let observer = new IntersectionObserver((entries) =>{
+        //     //    console.log(entries);
+        //        getData(id);
+        //    })
 
-    //    let target = document.querySelector('.generic-subscribe');
-    //    observer.observe(target)
+        //    let target = document.querySelector('.generic-subscribe');
+        //    observer.observe(target)
 
     }
 
@@ -256,7 +268,14 @@ $('document').ready(function () {
         menuResponsive();
 
         // Email Validation
-        emailValidate();
+        $("#emailForm").validate({
+            rules: {
+                field: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
 
         // Footer Slide down list
         let mq = window.matchMedia('(max-width: 481px)');
@@ -278,7 +297,7 @@ $('document').ready(function () {
         window.addEventListener('resize', media(mq));
     }
 
-    if($('.signup-page').length > 0){
+    if ($('.signup-page').length > 0) {
         // Search Layer When clicking on search button
         search();
 
@@ -290,7 +309,7 @@ $('document').ready(function () {
         window.addEventListener('resize', media(mq));
     }
 
-    if($('.contact-page').length > 0){
+    if ($('.contact-page').length > 0) {
         // Search Layer When clicking on search button
         search();
 
@@ -302,7 +321,7 @@ $('document').ready(function () {
         window.addEventListener('resize', media(mq));
     }
 
-    if($('.about-page').length > 0){
+    if ($('.about-page').length > 0) {
         // Search Layer When clicking on search button
         search();
 
